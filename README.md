@@ -1,5 +1,5 @@
 # Jupyter Notebook Template
-
+ <!--- https://github.com/gitpod-io/gitpod/issues/758 --->
 Use this template for creating Jupyter notebooks compatible with Gitpod and local environments.
 
 Once the Gitpod workspace has successfully loaded, it will install the most common dependencies used in a typical notebook.
@@ -23,3 +23,7 @@ sympy>=1.10.1
 # Machine learning ----------------------------
 sklearn
 ```
+## Gitpod
+You can use this command to tell the notebook server to allow your workspace location to access the API:
+
+jupyter notebook --NotebookApp.allow_origin=\'$(gp url 8888)\'
